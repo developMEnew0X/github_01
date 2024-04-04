@@ -3,15 +3,10 @@
 import React from 'react'
 import GoogleIcon from '../../components/googleIcon'
 import { signIn, useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 function page() {
-  const { status } = useSession();
-  const routerX = useRouter();
-  if(status === "authenticated"){
-    // routerX.replace("/");
-  }
+
   return (
     <>
     <div className="flex items-center justify-center max-h-lvh bg-gray-100">
