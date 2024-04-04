@@ -5,11 +5,12 @@ import Navbar from "../components/Navbar";
 import Button from "@/components/Buttons";
 import USERimg from "@/components/USER";
 import {MobileNavLoad } from "@/components/mobileNav";
+import UserInfo from "@/components/UserInfo";
 
 export default function Home() {
   return (
     <>
-    <nav className={"bg-white shadow-lg lg:px-8"}>
+    <nav className={"fixed w-full bg-white shadow-lg lg:px-8 z-20"}>
       <div className={"max-w-7xl mx-auto px-4"}>
         <div className={"flex justify-between items-center h-16"}>
           <MobileNavLoad></MobileNavLoad>
@@ -22,12 +23,15 @@ export default function Home() {
             </ul>
             <div className={"w-10 h-10 shadow shadow-slate-900 flex overflow-hidden border border-gray-400 rounded-full"}>
               <USERimg></USERimg>
+              
             </div>
           </div> 
           
         </div>
       </div>
     </nav>
+
+
     </>
   );
 }
