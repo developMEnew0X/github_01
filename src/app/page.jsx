@@ -1,7 +1,6 @@
 import React from "react";
 
 import CompletedNavBar from "../components/CompletedNavBar";
-import LoginINhero from "../components/loginINhero";
 
 export default function Home() {
   
@@ -9,7 +8,7 @@ export default function Home() {
     <>
       <CompletedNavBar></CompletedNavBar>
 
-      <LoginINhero></LoginINhero>
+      
     </>
   );
 }
