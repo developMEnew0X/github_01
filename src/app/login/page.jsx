@@ -6,7 +6,7 @@ import { signIn, useSession } from 'next-auth/react';
 import Link from 'next/link';
 
 function page() {
-
+  const Status  = useSession();
   return (
     <>
     <div className="flex items-center justify-center max-h-lvh bg-gray-100">
